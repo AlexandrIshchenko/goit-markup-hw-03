@@ -283,7 +283,7 @@ ul {
 }
 
 .container-contacts_list {
-    margin: 0px 156px 0px 315px
+    margin: 0px 156px 0px auto;
 }
 
 .contacts {
