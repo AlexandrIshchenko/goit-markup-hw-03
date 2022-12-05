@@ -283,8 +283,7 @@ ul {
 }
 
 .container-contacts_list {
-    margin: 0px 156px 0px 315px;
-    
+    margin: 0px 156px 0px 315px
 }
 
 .contacts {
@@ -293,6 +292,7 @@ ul {
 
 .contacts .link {
     display: block;
+
     padding: 24px 0 24px 0;
 }
 
@@ -308,6 +308,11 @@ ul {
     justify-content: center;
     margin-bottom: 48px;
     text-align: center;
+    width: 492px;
+}
+
+.hero-title {
+    margin-bottom: 48px;
 }
 
 .button {
@@ -333,7 +338,7 @@ ul {
     overflow: hidden;
 }
 
-.advantage-section {
+.container-advantage_section {
     padding-bottom: 120px;
     max-width: 1158px;
     padding: 0 15px;
@@ -360,23 +365,22 @@ ul {
 
         /* What are we doing Flexbox */
 
-.example-title {
-    padding-bottom: 72px;
-}
-
 .example {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-.example-section {
+.container-example_section {
     margin-bottom: 120px;
+}
+
+.example-title {
+    padding-bottom: 72px;
 }
 
 .example-list {
     display: flex;
-    
 }
 
 .example-item:not(:last-child) {
@@ -480,7 +484,7 @@ ul {
     padding: 96px 0 120px;
 }
 
-.container {
+.container-btn_filter {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
