@@ -99,7 +99,7 @@ ul {
     color: var(--light);
 }
 
-/* Header */
+/* Logo Navigation Contacts */
 
 .site-nav .link {
     color:var(--dark);
@@ -119,7 +119,7 @@ ul {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color:var(--text);
+    color:var(--primary-brand);
 }
 
 .site-nav .link:active {
@@ -135,10 +135,9 @@ ul {
 
 .hero-title {
     color: #FFFFFF;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
 }
 
@@ -154,6 +153,10 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     text-transform: capitalize;
+}
+
+.advntage-text {
+    font-weight: 400;
 }
 
 /* What Are We Doing */
@@ -213,5 +216,301 @@ ul {
 }
 
 .proects-title {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+                            /* Flexbox */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+        /* Header Flexbox */
+
+.header-section {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 2px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-header {
+    margin-bottom: 96px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.logo-header {
+    padding: 24px 78px 24px 156px;
+    
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .link {
+    padding: 24px 0;
+}
+
+.item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.container-contacts_list {
+    margin: 0px 156px 0px 315px;
+    
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts .link {
+    display: block;
+    padding: 24px 0 24px 0;
+}
+
+        /* Hero Flexbox */
+
+.hero {
+    max-width: 1440px;
+    margin: 0 auto 118px;
+    padding: 192px 474px;
+}
+
+.container-secrion_hero {
+    justify-content: center;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: rgba(0, 0, 0, 0.5);
+}
+
+        /* Advantage Flexbox */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantage-section {
+    padding-bottom: 120px;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto 120px;
+    display: flex;
+}
+
+.advantage-list {
+    display: flex;
+}
+
+.advantage-item:not(:last-child) {
+    margin-right: 12px;
+    
+}
+
+.advantage-item:not(:first-child) {
+    margin-left: 12px;
+}
+
+.advantage-title {
+    padding-bottom: 8px;
+}
+
+        /* What are we doing Flexbox */
+
+.example-title {
+    padding-bottom: 72px;
+}
+
+.example {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.example-section {
+    margin-bottom: 120px;
+}
+
+.example-list {
+    display: flex;
+    
+}
+
+.example-item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.example-item:not(:first-child) {
+    margin-left: 12px;
+}
+
+.example-image.no-gap {
+    display: block;
+}
+
+        /* Our Team Flexbox */
+
+.team {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-section_team {
+    margin-bottom: 120px;
+}
+
+.team-title {
+    padding-top: 120px;
+    padding-bottom: 72px;
+    
+}
+
+.team-section-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-section-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-section-item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.team-section-item:not(:first-child) {
+    margin-left: 12px;
+}
+
+.container-team_images {
+    padding-bottom: 32px;
+}
+
+.team-name {
+    padding-bottom: 8px;
+}
+
+.team-member {
+    padding: 0 32px 16px;
+    
+}
+
+        /* Footer Flexbox */
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.container-logo_footer {
+    margin: 100px 0 100px 156px;
+}
+
+.footer-logo_box {
+    padding-bottom: 16px;
+}
+
+.footer-section-text {
+    width: 264px;
+}
+
+        /* page portfolio Flexbox */
+
+.portfolio-btn_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.secondary {
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+}
+
+.section-page {
+    padding: 96px 0 120px;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+        /* Buttons Filters */
+
+.portfolio-btn_list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+        /* Portfolio */
+
+.portfolio-btn {
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+.portfolio-cards_list {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+}
+
+.portfolio-cards_box {
+    padding: 32px 16px;
 }
