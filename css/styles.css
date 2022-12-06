@@ -157,6 +157,9 @@ ul {
 
 .advntage-text {
     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* What Are We Doing */
@@ -201,6 +204,10 @@ ul {
 
 .footer-text {
     color: var(--accent);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .footer {
@@ -213,12 +220,17 @@ ul {
 
 .proects-text {
     text-transform: capitalize;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .proects-title {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
                             /* Flexbox */
@@ -246,69 +258,74 @@ ul {
         /* Header Flexbox */
 
 .header-section {
-    max-width: 1440px;
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
-    margin-bottom: 2px;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0 10px 16px -16px rgba(0, 0, 0, 0.6);
 }
 
 .portfolio-header {
     margin-bottom: 96px;
 }
 
-.pagination {
+.navigation-pages {
     display: flex;
     align-items: center;
 }
 
 .logo-header {
-    padding: 24px 78px 24px 156px;
-    
+    display: block;
+    padding: 24px 0;
+    margin-right: 78px;
 }
 
 .site-nav {
     display: flex;
 }
 
-.site-nav .link {
+.site-nav .item {
     padding: 24px 0;
+}
+
+.site-nav .link {
+    display: block;
 }
 
 .item:not(:last-child) {
     margin-right: 40px;
 }
 
-.container-contacts_list {
-    margin: 0px 156px 0px auto;
-}
-
 .contacts {
     display: flex;
+    margin-left: auto;
 }
 
-.contacts .link {
-    display: block;
+.contacts .item {
+    
+    padding: 24px 0;
+}
 
-    padding: 24px 0 24px 0;
+.contacts .link{
+    display: block;
 }
 
         /* Hero Flexbox */
 
 .hero {
-    max-width: 1440px;
-    margin: 0 auto 118px;
-    padding: 192px 474px;
+    display: flex;
+    width: 1440px;
+    padding: 192px 0;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .container-secrion_hero {
     justify-content: center;
-    margin-bottom: 48px;
     text-align: center;
-    width: 492px;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 474px;
 }
 
 .hero-title {
@@ -338,84 +355,58 @@ ul {
     overflow: hidden;
 }
 
-.container-advantage_section {
-    padding-bottom: 120px;
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto 120px;
-    display: flex;
+.advantage {
+    width: 1158px;
+    padding: 120px 15px 120px;
+    margin: 0 auto;
 }
 
 .advantage-list {
     display: flex;
-}
-
-.advantage-item:not(:last-child) {
-    margin-right: 12px;
-    
-}
-
-.advantage-item:not(:first-child) {
-    margin-left: 12px;
+    gap: 24px;
 }
 
 .advantage-title {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
         /* What are we doing Flexbox */
-
 .example {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.container-example_section {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .example-title {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .example-list {
     display: flex;
-}
-
-.example-item:not(:last-child) {
-    margin-right: 12px;
-}
-
-.example-item:not(:first-child) {
-    margin-left: 12px;
+    justify-content: center;
+    gap: 24px;
 }
 
 .example-image.no-gap {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
         /* Our Team Flexbox */
 
-.team {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .container-section_team {
-    margin-bottom: 120px;
+    width: 1158px;
+    padding: 0 15px 120px;
+    margin: 0 auto;
 }
 
 .team-title {
-    padding-top: 120px;
-    padding-bottom: 72px;
-    
+    margin-bottom: 72px;
 }
 
 .team-section-list {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .team-section-item {
@@ -425,16 +416,8 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-section-item:not(:last-child) {
-    margin-right: 12px;
-}
-
-.team-section-item:not(:first-child) {
-    margin-left: 12px;
-}
-
-.container-team_images {
-    padding-bottom: 32px;
+.team-section-image {
+    display: block;
 }
 
 .team-name {
@@ -442,28 +425,31 @@ ul {
 }
 
 .team-member {
-    padding: 0 32px 16px;
-    
+    padding: 32px 16px;
 }
 
         /* Footer Flexbox */
 
 .footer {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
-    padding: 0 15px;
-    border: 1px solid rgba(0, 0, 0, 0);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .container-logo_footer {
-    margin: 100px 0 100px 156px;
+    margin: 0 auto;
+    width: 1440px;
+    padding-left: 156px;
+    padding-right: 15px;
 }
 
-.footer-logo_box {
-    padding-bottom: 16px;
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
-.footer-section-text {
+.footer-text {
     width: 264px;
 }
 
@@ -484,10 +470,15 @@ ul {
     padding: 96px 0 120px;
 }
 
-.container-btn_filter {
+.proects {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+.container-btn_filter {
+    
 }
 
         /* Buttons Filters */
@@ -498,8 +489,6 @@ ul {
     gap: 24px;
     margin-bottom: 72px;
 }
-
-        /* Portfolio */
 
 .portfolio-btn {
     line-height: 1.5;
@@ -515,6 +504,17 @@ ul {
     flex-wrap: wrap;
 }
 
+.portfolio-crds_images {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .portfolio-cards_box {
     padding: 32px 16px;
+    box-shadow: 0 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.proects-title {
+    margin-bottom: 8px;
 }
